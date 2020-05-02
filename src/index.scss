@@ -1,0 +1,23 @@
+//import fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+//import mixins-vars
+@import "./mixins-vars";
+
+//import bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  margin: 0;
+  font-family: $basic-font-family;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+
